@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReactCourse - My Profile</title>
-    <!-- TODO-DONE: FAVICON LOGO NELLJO-->
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.png">
-    <!-- TODO-DONE: REMIX ICONS installed locally-->
+    <!--FAVICON LOGO NELLJO-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/logo.png">
+    <!--REMIX ICONS installed locally-->
     <link rel="stylesheet" href="./assets/css/bundle-css/remixicon/fonts/remixicon.css">
-    <!-- TODO-DONE: SWIPER BUNDLE installed locally -->
+    <!--SWIPER BUNDLE installed locally -->
     <link rel="stylesheet" href="./assets/css/bundle-css/swiper/swiper-bundle.min.css">
-    <!-- TODO-DONE: CUSTOM STYLE main css-->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!--CUSTOM STYLE main css-->
+    <link rel="stylesheet" href="./assets/css/main.css"> 
 </head>
 
 <body>
@@ -62,13 +62,19 @@
                     <i class="ri-search-line"></i>
                 </button>
 
-                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+               <button
+                 class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+                 id="menu-toggle-icon"
+               >
                     <i class="ri-menu-3-line open-menu-icon"></i>
                     <i class="ri-close-line close-menu-icon"></i>
                 </button>
 
                 <a href="#" class="list-link screen-sm-hidden">Sign in</a>
-                <a href="#" class="list-link screen-sm-hidden btn sign-up-btn fancy-border">
+                <a
+                  href="#"
+                  class="list-link screen-sm-hidden btn sign-up-btn fancy-border"
+                >
                     <span>Sign in</span>   
                 </a>
             </div>
@@ -76,9 +82,86 @@
         </nav>
     </header>
     <!-- TODO: SEARCH  -->
+   <div class="search-form-container container" id="search-form-container">
+        <div class="form-container-inner">
 
+            <form action="" class="form">
+                <input type="text" class="form-input" placeholder="What are you looking for homie?"><button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close.</span>
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+   </div>
     <!-- TODO: FEATURED ARTICLES  -->
+    <section class="featured-articles section-header-offset">
+        <div class="featured-articles-container container d-grid">
+            <div class="featured-content d-grid">
+                <div class="headline-banner">
+                    <h3 class="headline fancy-border">
+                        <span class="place-items-center">Breaking legz</span>
+                    </h3>
+                    <span class="headline-description">Angkol announces a new partnership...</span>
+                </div>
+                <!-- 1st article link -->
+               <a href="./post.html" class="article featured-article featured-article-1">
+                    <img src="./assets/img/featured/3.PARTNER/3.partnership2.JPG" alt="" class="article-image">
+                    <span class="article-category">Previous team</span>
 
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span> Dec 5th 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min red</span>
+                        </div>
+
+                        <h3 class="title article-title">Where are they?</h3> 
+                    </div>
+               </a> 
+
+                <!-- 2nd article link -->
+                <a href="./post.html" class="article featured-article featured-article-1">
+                    <img src="./assets/img/featured/6.TECH/6.tech.JPG" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span> Dec 5th 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min red</span>
+                        </div>
+
+                        <h3 class="title article-title">Will VR go forward?</h3> 
+                    </div>
+               </a> 
+            
+                <!-- 3rd article link -->
+                <a href="./post.html" class="article featured-article featured-article-1">
+                    <img src="./assets/img/featured/7.MENTOR/7.mentor.JPG" alt="" class="article-image">
+                    <span class="article-category">The mentor</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span> Dec 5th 2023</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 min red</span>
+                        </div>
+
+                        <h3 class="title article-title">Who is Van Alfred R. Sabacajan</h3> 
+                    </div>
+               </a>  
+            </div>
+
+            
+        </div>
+    </section>
     <!-- TODO: QUICK READ  -->
 
     <!-- TODO: ODLER POSTS  -->
@@ -90,5 +173,9 @@
     <!-- TODO: FOOTER  -->
 
     <!-- TODO:  SWIPER JS installed locally  -->
+    <script src="./assets/css/bundle-css/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- TODO:  CUSTOM SCRIPT  -->
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
